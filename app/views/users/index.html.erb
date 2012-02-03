@@ -1,0 +1,12 @@
+<table style="background: none repeat scroll 0 0 rgba(82, 82, 82, 0.7); -moz-transform: scale(1) rotate(-15deg) translate(7px, 5px) skew(5deg, 0deg);
+                        box-shadow: 3px 3px 3px 3px #AAAAAA;border: 5px solid #3B1000;">
+        <tr>
+                <td>
+                        <%= link_to image_tag("facebook.jpeg"), user_omniauth_authorize_path(:facebook) %>
+                        <%= link_to image_tag("yahoo.jpeg"), user_omniauth_authorize_path(:open_id, :openid_url => "http://yahoo.com") %>
+                        <%= link_to image_tag("google.jpeg"), user_omniauth_authorize_path(:google_apps) %>
+                        <%= link_to image_tag("linkedin.jpeg"), user_omniauth_authorize_path(:google)%>
+                </td>
+        </tr>
+</table>
+
